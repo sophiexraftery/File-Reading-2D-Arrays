@@ -1,0 +1,36 @@
+/*
+Create a program that reads 5 ints from a file called numbers.txt into a 1D array.
+Your program should then:
+Find the highest value
+Output the highest value to the console
+*/
+import java.io.*;
+public class Week5MicroExample2
+{
+	public static void main(String[] args) throws IOException
+	{
+		String filename = "numbers.txt";
+		File file = new File(filename);
+		Scanner inputFile = new Scanner(file);
+		
+		int[] nums = new int[5];
+		
+		for(int i = 0; i < nums.length; i++;)
+		{
+			nums[i] = inputFile.nextInt();
+		}
+		
+		int highest = num[0];
+		
+		for(int i = 1; i < 5; i++)
+		{
+			if(num[i] > highest)
+			{
+				highest = num[i];
+			}
+		}
+		
+	System.out.println("Highest value is: " + highest);
+	
+	}
+}
