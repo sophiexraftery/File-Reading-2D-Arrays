@@ -1,0 +1,23 @@
+/*
+Create a 2D array with 3 rows and 2 columns.
+Use a for loop to populate the array with the value 7 
+Output the array to the console.
+*/
+public class Week5MicroExample3
+{
+	public static void main(String[] args)
+	{
+		int[][] nums = new int[3][2];
+		
+		for(int row = 0; row < nums.length; row++)
+		{
+			for(int col = 0; col < nums[row].length; col++)
+			{
+				nums[row][col] = 7;
+				System.out.print(nums[row][col] + " ");
+			}
+		System.out.println();
+		}
+	}
+}
+}
