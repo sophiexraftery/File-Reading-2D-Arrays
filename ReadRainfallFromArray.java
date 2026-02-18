@@ -10,7 +10,7 @@ public class ReadRainfallFromArray
 	File file = new File(filename);
 	Scanner inputFile = new Scanner(file);
 
-	//create an array of doubles called cashWeekly
+	//create an array of doubles called rainfallDaily
 	double[] rainfallDaily = new double[366];
 
 	//populate each index of the array with the data from the file
@@ -61,10 +61,7 @@ public class ReadRainfallFromArray
 	System.out.printf("%nAverage monthly rainfall was: %.2f ", monthlyAverage);
 	System.out.printf("%nThe day with the highest rainfall was day %d , which had %.2f mm of rainfall that day.",highestDay , highest);
 	System.out.printf("%nThe day with the lowest rainfall was day %d , which had %.2f mm of rainfall that day.",lowestDay , lowest);
-
-
-
+		
 	inputFile.close();
-
 	}
 }
